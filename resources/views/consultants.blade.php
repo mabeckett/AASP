@@ -83,9 +83,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="homepage.blade.php">Home</a>
-                    <a href="consultants.blade.php">Consultants</a>
-                    <a href="schools.blade.php">Schools</a>
+                    <a href="{{ url('/homepage') }}">Home</a>
+                    <a href="{{ url('/consultants') }}">Consultants</a>
+                    <a href="{{ url('/schools') }}">Schools</a>
                 </div>
             </div>
         </div>
