@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -83,11 +83,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/homepage') }}">Home</a>
-                    <a href="{{ url('/consultants') }}">Consultants</a>
-                    <a href="{{ url('/schools') }}">Schools</a>
+                    <a href="{{ url('./about') }}">About</a>
+                    <a href="{{ url('./consultants') }}">Consultants</a>
+                    <a href="{{ url('./schools') }}">Schools</a>
                 </div>
             </div>
         </div>
     </body>
 </html>
+

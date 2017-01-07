@@ -1,94 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>AASP</title>
+    <title>AASP</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+<style>
 
-            .full-height {
-                height: 100vh;
-            }
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #5a5a5a;;
+}
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+.custom1.darken-2 {
+    background-color: white;
+}
 
-            .position-ref {
-                position: relative;
-            }
+.custom1-text.text-darken-2, nav ul a {
+    color: white;
+}
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+nav {
+  color: #fff;
+  background-color: #5a5a5a;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
 
-            .content {
-                text-align: center;
-            }
+</style>
+</head>
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Asia-America Student Placement
-                </div>
-
-                <div class="links">
-                    <a href="{{ url('/homepage') }}">Home</a>
-                    <a href="{{ url('/consultants') }}">Consultants</a>
-                    <a href="{{ url('/schools') }}">Schools</a>
-                </div>
-            </div>
-        </div>
-    </body>
+<body>
+	<nav class="custom2 darken-3 z-depth-1" role="navigation">
+    <div class="nav-wrapper">
+        <a class="brand-logo center custom1-text text-darken-2">Asia-America Student Placement</a>
+        <ul class="right hide-on-med-and-down">
+        	<li><a href="{{ url('/') }}"class="custom1-text text-darken-2 active">Home</a></li>
+            <li><a href="{{ url('./about') }}"class="custom1-text text-darken-2 active">About</a></li>
+            <li><a href="{{ url('./consultants') }}"class="custom1-text text-darken-2 active">Consultants</a></li>
+            <li><a href="{{ url('./schools') }}"class="custom1-text text-darken-2 active">Schools</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        @yield('content')
+    </div>
+</nav>
+</body>
 </html>
 

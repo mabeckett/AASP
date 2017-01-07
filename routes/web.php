@@ -12,10 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/homepage', function () {
     return view('homepage');
 });
 
@@ -25,4 +21,8 @@ Route::get('/consultants', function () {
 Route::get('/schools', function () {
     return view('schools');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+
 
