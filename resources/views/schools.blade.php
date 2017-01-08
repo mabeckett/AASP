@@ -1,17 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome, Stranger!</div>
+<!DOCTYPE html>
+<html>
+<body>
 
-                <div class="panel-body">
-                    <a href="/login">Login</a> or <a href="/register">register</a> to get started.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<h1>Schools</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+	var mapCanvas = document.getElementById("map");
+	var mapOptions = {
+		center: new google.maps.LatLng(28.5383, -81.3792),
+		zoom: 10
+	}
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+
+	}
+	var tfaMarker = new google.maps.Map(mapCanvas, mapOptions)
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd3ur1TeWT0Yrugn7eUjLw1091lCZ1OxY&callback=myMap"></script>
+
+</body>
+</html>
 @endsection

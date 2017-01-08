@@ -38,9 +38,10 @@ nav {
   line-height: 80px;
 }
 
+@yield('extra-style')
+
 </style>
 </head>
-
 <body>
 	<nav class="custom2 darken-3 z-depth-1" role="navigation">
     <div class="nav-wrapper">
