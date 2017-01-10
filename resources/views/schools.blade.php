@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <body>
 
-<h1>Schools</h1>
+<h2>Schools</h2>
 
 <div id="map" style="width:100%;height:500px"></div>
 
@@ -23,7 +23,7 @@ function myMap() {
 
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd3ur1TeWT0Yrugn7eUjLw1091lCZ1OxY&callback=myMap"></script>
+
 
 </body>
 </html>
