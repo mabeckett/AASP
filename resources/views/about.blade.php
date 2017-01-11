@@ -3,16 +3,19 @@
 @section('content')
 
  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+    <a class="carousel-item" href="#"><img src="https://s5.postimg.org/vy02d5mdv/kids1.png"></a>
+    <a class="carousel-item" href="#"><img src="https://s5.postimg.org/ijmzh4fpv/kids3.png"></a>
+    <a class="carousel-item" href="#"><img src="https://s5.postimg.org/5usoxg9lf/kids5.png"></a>
 </div>
 </br>
-<p>
-Welcome to Asia-America Student Placement!
-</p>
+
+<div class="row">
+	<div class="col-lg-12 text-center">
+		<h5>
+		Welcome to Asia-America Student Placement! Here at AASP we provide information to prospective, potential students or parents of those students about schools in the Orlando, Florida area that are apart of the Student and Exchange Visitor Program (SEVP). Also we provide a list of potential consultants that you may want to use that will work with you and with the schools in order to make for a smooth transition.
+		</h5>
+	</div>
+</div>
 
 <script> 
 //Runs the carousel

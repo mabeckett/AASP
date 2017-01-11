@@ -37,6 +37,9 @@ nav {
   height: 80px;
   line-height: 80px;
 }
+img {
+	position: relative;
+}
 
 @yield('extra-style')
 
